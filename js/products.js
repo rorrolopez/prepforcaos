@@ -110,7 +110,7 @@ const PRODUCTS = [
 
   // MOCHILAS Y KITS
   { asin: "B0F75GGNZT", categoria: "mochilas", titulo: "Kit de Supervivencia Completo 72 Horas — Camping gas, botiquín táctico, radio solar", precio: "219,95", rating: "4,2", img: "https://m.media-amazon.com/images/I/81AT2JRbOgL._AC_UL320_.jpg" },
-  { asin: "B0FL1WWR5Q", categoria: "mochilas", titulo: "Gemmac Kit Supervivencia 140 en 1 — Botiquín, radio a pilas, linterna", precio: "34,99", rating: "4,3", img: "https://m.media-amazon.com/images/I/71xqYQqQnEL._AC_UL320_.jpg" },
+  { asin: "B0FL1WWR5Q", categoria: "mochilas", titulo: "Gemmac Kit Supervivencia 140 en 1 — Botiquín, radio a pilas, linterna", precio: "34,99", rating: "4,3", img: "https://m.media-amazon.com/images/I/815QM9E8VXL._AC_UL320_.jpg" },
   { asin: "B07GGPH3CZ", categoria: "mochilas", titulo: "ProCase 40L Mochila Táctica Militar MOLLE — para BOB, caza y senderismo", precio: "29,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/81EXesq07VL._AC_UL320_.jpg" },
   { asin: "B08NF9KH46", categoria: "mochilas", titulo: "QT&QY Mochila Militar Táctica 45L MOLLE — Bug Out Bag de 3 días", precio: "42,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/81Q2KEUMLZL._AC_UL320_.jpg" },
   { asin: "B00149O23M", categoria: "mochilas", titulo: "Ready America Mochila de Emergencia — kit preparado para terremotos y desastres", precio: "215,45", rating: "4,7", img: "https://m.media-amazon.com/images/I/816dH3ZwWUL._AC_UL320_.jpg" },
@@ -162,11 +162,11 @@ const PRODUCTS = [
   { asin: "B0F7KYSVBM", categoria: "refugio", titulo: "Deecam Saco de dormir de emergencia, aislamiento térmico ligero", precio: "19,87", rating: "4,3", img: "https://m.media-amazon.com/images/I/71dHPQgLx7L._AC_UL320_.jpg" },
   { asin: "B0BH48615L", categoria: "refugio", titulo: "LYN Tienda de Campaña Instantánea, impermeable y ligera para emergencia y supervivencia", precio: "25,99", rating: "4,0", img: "https://m.media-amazon.com/images/I/61ewn6uusgL._AC_UL320_.jpg" },
   { asin: "B07WR1V29Y", categoria: "refugio", titulo: "Night Cat Tienda de Campaña para 1-2 Personas, impermeable y de montaje fácil", precio: "59,99", rating: "4,3", img: "https://m.media-amazon.com/images/I/61nWfIjm3vL._AC_UL320_.jpg" },
-  { asin: "B0DXVJM334", categoria: "refugio", titulo: "Yuzonc Colchoneta Camping Ultraligera, aislante y compacta para dormir en emergencias", precio: "27,99", rating: "4,2", img: "https://m.media-amazon.com/images/I/71ihX-6D9OL._AC_UL320_.jpg" },
-  { asin: "B0CSPBYYJD", categoria: "refugio", titulo: "Toldo de Camping 3x3m Impermeable, protección solar y de lluvia para refugio improvisado", precio: "32,99", rating: "4,4", img: "https://m.media-amazon.com/images/I/81xnEjnBTBL._AC_UL320_.jpg" },
-  { asin: "B08HH7NY9J", categoria: "refugio", titulo: "AnorTrek Hamaca de Camping con Mosquitero integrado, para refugio en exterior", precio: "25,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/71QYUu4-J-L._AC_UL320_.jpg" },
-  { asin: "B01M19HAEB", categoria: "refugio", titulo: "Bramble Pack de 10 Mantas Térmicas de Emergencia", precio: "14,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/81b6MnkAskL._AC_UL320_.jpg" },
-  { asin: "B0CJT7JW5Z", categoria: "refugio", titulo: "Kit Lona Impermeable 2x3m multiusos, para refugio, cobertizo o protección de equipo", precio: "13,99", rating: "4,0", img: "https://m.media-amazon.com/images/I/71m5N-uXo3L._AC_UL320_.jpg" },
+  { asin: "B0DXVJM334", categoria: "refugio", titulo: "Yuzonc Colchoneta Camping Ultraligera, aislante y compacta para dormir en emergencias", precio: "27,99", rating: "4,2", img: "https://m.media-amazon.com/images/I/71JHn2l3-cL._AC_UL320_.jpg" },
+  { asin: "B0CSPBYYJD", categoria: "refugio", titulo: "Toldo de Camping 3x3m Impermeable, protección solar y de lluvia para refugio improvisado", precio: "32,99", rating: "4,4", img: "https://m.media-amazon.com/images/I/614E1QjdUEL._AC_UL320_.jpg" },
+  { asin: "B08HH7NY9J", categoria: "refugio", titulo: "AnorTrek Hamaca de Camping con Mosquitero integrado, para refugio en exterior", precio: "25,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/61km7TutlYL._AC_UL320_.jpg" },
+  { asin: "B01M19HAEB", categoria: "refugio", titulo: "Bramble Pack de 10 Mantas Térmicas de Emergencia", precio: "14,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/91ytkXPdjsL._AC_UL320_.jpg" },
+  { asin: "B0CJT7JW5Z", categoria: "refugio", titulo: "Kit Lona Impermeable 2x3m multiusos, para refugio, cobertizo o protección de equipo", precio: "13,99", rating: "4,0", img: "https://m.media-amazon.com/images/I/71dyuTMlfQL._AC_UL320_.jpg" },
 
   // ILUMINACIÓN
   { asin: "B08MLBPRCS", categoria: "iluminacion", titulo: "LEKIA Linterna LED de alta potencia recargable por USB, 5 modos", precio: "23,99", rating: "4,4", img: "https://m.media-amazon.com/images/I/61q2CeTtSRL._AC_UL320_.jpg" },
@@ -174,11 +174,11 @@ const PRODUCTS = [
   { asin: "B0DXDTB6Q2", categoria: "iluminacion", titulo: "Linterna LED de alta potencia recargable, batería de 5000 mAh", precio: "15,99", rating: "4,4", img: "https://m.media-amazon.com/images/I/81Mv7VeuWgL._AC_UL320_.jpg" },
   { asin: "B09MS489TF", categoria: "iluminacion", titulo: "POKISEED Linterna Frontal LED Recargable 1500 lúmenes, USB-C 5000 mAh", precio: "35,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/71QDZY31gbL._AC_UL320_.jpg" },
   { asin: "B09KRQRRFL", categoria: "iluminacion", titulo: "Glocusent Lámpara de Camping, 106 LED, 80 horas de autonomía, recargable USB-C", precio: "24,99", rating: "4,5", img: "https://m.media-amazon.com/images/I/6188dv9x2ZL._AC_UL320_.jpg" },
-  { asin: "B0DGBRL3H2", categoria: "iluminacion", titulo: "Sterno Velas de Emergencia, hasta 100 horas de combustión continua", precio: "109,08", rating: "4,7", img: "https://m.media-amazon.com/images/I/71lJmR8+K9L._AC_UL320_.jpg" },
-  { asin: "B0197R8882", categoria: "iluminacion", titulo: "Cyalume SnapLight Barra de Luz Química Verde de 12 horas, señalización de emergencia", precio: "31,13", rating: "4,5", img: "https://m.media-amazon.com/images/I/71l6+u1O2sL._AC_UL320_.jpg" },
-  { asin: "B0GGY8TTR2", categoria: "iluminacion", titulo: "HENGBIRD Set de 4 Linternas Dinamo, sin pilas, carga manual de emergencia", precio: "11,99", rating: "4,3", img: "https://m.media-amazon.com/images/I/71K9x6xkWDL._AC_UL320_.jpg" },
-  { asin: "B0FXMTMGS8", categoria: "iluminacion", titulo: "Baliza de Emergencia V16 Homologada DGT, sustituye a los triángulos", precio: "12,50", rating: "4,3", img: "https://m.media-amazon.com/images/I/61Vr1Yz0nQL._AC_UL320_.jpg" },
-  { asin: "B0F8QFVH8L", categoria: "iluminacion", titulo: "Pack de 5 Velas de Supervivencia, hasta 30 horas de combustión cada una", precio: "11,99", rating: "4,0", img: "https://m.media-amazon.com/images/I/71m2vT4bFwL._AC_UL320_.jpg" },
+  { asin: "B0DGBRL3H2", categoria: "iluminacion", titulo: "Sterno Velas de Emergencia, hasta 100 horas de combustión continua", precio: "109,08", rating: "4,7", img: "https://m.media-amazon.com/images/I/71a4Ip+SGEL._AC_UL320_.jpg" },
+  { asin: "B0197R8882", categoria: "iluminacion", titulo: "Cyalume SnapLight Barra de Luz Química Verde de 12 horas, señalización de emergencia", precio: "31,13", rating: "4,5", img: "https://m.media-amazon.com/images/I/81GWWC2I9LL._AC_UL320_.jpg" },
+  { asin: "B0GGY8TTR2", categoria: "iluminacion", titulo: "HENGBIRD Set de 4 Linternas Dinamo, sin pilas, carga manual de emergencia", precio: "11,99", rating: "4,3", img: "https://m.media-amazon.com/images/I/611AC2Z5D-L._AC_UL320_.jpg" },
+  { asin: "B0FXMTMGS8", categoria: "iluminacion", titulo: "Baliza de Emergencia V16 Homologada DGT, sustituye a los triángulos", precio: "12,50", rating: "4,3", img: "https://m.media-amazon.com/images/I/71d6LMVXEJL._AC_UL320_.jpg" },
+  { asin: "B0F8QFVH8L", categoria: "iluminacion", titulo: "Pack de 5 Velas de Supervivencia, hasta 30 horas de combustión cada una", precio: "11,99", rating: "4,0", img: "https://m.media-amazon.com/images/I/61CaoqiMl4L._AC_UL320_.jpg" },
 
   // FUEGO Y COCINA
   { asin: "B0FHWMCNWK", categoria: "fuego", titulo: "Hornillo Camping Gas Portátil con adaptador de bombona + 4 cartuchos", precio: "36,95", rating: "4,5", img: "https://m.media-amazon.com/images/I/81DYqiTKtQL._AC_UL320_.jpg" },
@@ -186,11 +186,11 @@ const PRODUCTS = [
   { asin: "B0GZBKB6DD", categoria: "fuego", titulo: "Cocina de gas portátil de 1 fuego, 2,5 kW, ligera para mochila", precio: "19,95", rating: "4,3", img: "https://m.media-amazon.com/images/I/61w54dYDSwL._AC_UL320_.jpg" },
   { asin: "B01DBM79MK", categoria: "fuego", titulo: "Esbit Pastillas de Combustible Sólido 5g — para cocinar o encender barbacoa", precio: "7,99", rating: "4,4", img: "https://m.media-amazon.com/images/I/71Y27Y3Lr7L._AC_UL320_.jpg" },
   { asin: "B07NQHP4KS", categoria: "fuego", titulo: "Light My Fire Pedernal de Supervivencia Scout — encendedor de ferrocerio", precio: "14,95", rating: "4,6", img: "https://m.media-amazon.com/images/I/91x7VKOArhL._AC_UL320_.jpg" },
-  { asin: "B0CNH1DDNC", categoria: "fuego", titulo: "Mechero de Arco Eléctrico USB, recargable, resistente al viento y al agua", precio: "16,99", rating: "4,5", img: "https://m.media-amazon.com/images/I/61P3xVYQpwL._AC_UL320_.jpg" },
-  { asin: "B0DP4QC3DS", categoria: "fuego", titulo: "Fire-Maple G3 Olla Ultraligera de Titanio para camping y supervivencia", precio: "27,95", rating: "4,7", img: "https://m.media-amazon.com/images/I/71rV6LZ6KHL._AC_UL320_.jpg" },
-  { asin: "B0748DJGV9", categoria: "fuego", titulo: "RAPICCA Guantes de Barbacoa Resistentes al Calor hasta 500°C", precio: "39,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/81m9x3wYX6L._AC_UL320_.jpg" },
-  { asin: "B0D2QK85Q8", categoria: "fuego", titulo: "Estufa de Alcohol Portátil Mini, plegable y ligera para cocinar en exterior", precio: "14,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/61z6X4Q1YkL._AC_UL320_.jpg" },
-  { asin: "B09QGHFLK2", categoria: "fuego", titulo: "Boundless Voyage Estufa de Alcohol de Titanio Ultraligera para mochileros", precio: "41,98", rating: "4,5", img: "https://m.media-amazon.com/images/I/71xnI3S1nWL._AC_UL320_.jpg" },
+  { asin: "B0CNH1DDNC", categoria: "fuego", titulo: "Mechero de Arco Eléctrico USB, recargable, resistente al viento y al agua", precio: "16,99", rating: "4,5", img: "https://m.media-amazon.com/images/I/61cFeDvTmsL._AC_UL320_.jpg" },
+  { asin: "B0DP4QC3DS", categoria: "fuego", titulo: "Fire-Maple G3 Olla Ultraligera de Titanio para camping y supervivencia", precio: "27,95", rating: "4,7", img: "https://m.media-amazon.com/images/I/51NHN4L4BXL._AC_UL320_.jpg" },
+  { asin: "B0748DJGV9", categoria: "fuego", titulo: "RAPICCA Guantes de Barbacoa Resistentes al Calor hasta 500°C", precio: "39,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/81vClAKxMvL._AC_UL320_.jpg" },
+  { asin: "B0D2QK85Q8", categoria: "fuego", titulo: "Estufa de Alcohol Portátil Mini, plegable y ligera para cocinar en exterior", precio: "14,99", rating: "4,6", img: "https://m.media-amazon.com/images/I/61Ek6eDDAvL._AC_UL320_.jpg" },
+  { asin: "B09QGHFLK2", categoria: "fuego", titulo: "Boundless Voyage Estufa de Alcohol de Titanio Ultraligera para mochileros", precio: "41,98", rating: "4,5", img: "https://m.media-amazon.com/images/I/61ZdLp9EguL._AC_UL320_.jpg" },
 
   // LIBROS Y GUÍAS
   { asin: "B0FSZDG5P4", categoria: "libros", titulo: "Guía de Preparacionismo y Supervivencia: la información necesaria para prepararte de forma realista", precio: "20,59", rating: "4,0", img: "https://m.media-amazon.com/images/I/61MBr7nk9YL._AC_UL320_.jpg" },
@@ -198,11 +198,11 @@ const PRODUCTS = [
   { asin: "840917748X", categoria: "libros", titulo: "Manual de Supervivencia Urbana: Técnicas y Tácticas de Supervivencia Moderna", precio: "20,58", rating: "4,4", img: "https://m.media-amazon.com/images/I/61sHRuqHULL._AC_UL320_.jpg" },
   { asin: "B0GVK5KVJ5", categoria: "libros", titulo: "Supervivencia Extrema: manual definitivo para sobrevivir a crisis y situaciones límite", precio: "12,56", rating: "5,0", img: "https://m.media-amazon.com/images/I/71C3b35xcGL._AC_UL320_.jpg" },
   { asin: "0062378074", categoria: "libros", titulo: "SAS Survival Handbook (edición en inglés) — el manual de referencia clásico de supervivencia de Lofty Wiseman", precio: "23,88", rating: "4,8", img: "https://m.media-amazon.com/images/I/71ccpZJ9ZBL._AC_UL320_.jpg" },
-  { asin: "8428216886", categoria: "libros", titulo: "Plantas Silvestres Comestibles — Nueva Generación, guía de identificación y recolección", precio: "24,98", rating: "4,4", img: "https://m.media-amazon.com/images/I/81c6zZKn1sL._AC_UL320_.jpg" },
-  { asin: "8408269356", categoria: "libros", titulo: "El ABC del Bushcraft: técnicas esenciales de vida en la naturaleza", precio: "17,00", rating: "4,5", img: "https://m.media-amazon.com/images/I/81FQ+X6qX+L._AC_UL320_.jpg" },
-  { asin: "1079712348", categoria: "libros", titulo: "101 Técnicas y Consejos de Supervivencia para cualquier situación", precio: "8,26", rating: "4,3", img: "https://m.media-amazon.com/images/I/71J4b0y6zwL._AC_UL320_.jpg" },
-  { asin: "8408304798", categoria: "libros", titulo: "Bushcraft Avanzado: Guía de Nivel Experto para la vida en el bosque", precio: "16,10", rating: "4,5", img: "https://m.media-amazon.com/images/I/81m8u+GxdxL._AC_UL320_.jpg" },
-  { asin: "8408319299", categoria: "libros", titulo: "Manual de Supervivencia Urbana: cómo actuar ante cortes de suministro, desabastecimiento y crisis en la ciudad", precio: "16,05", rating: "4,9", img: "https://m.media-amazon.com/images/I/81nQe1e3vDL._AC_UL320_.jpg" },
+  { asin: "8428216886", categoria: "libros", titulo: "Plantas Silvestres Comestibles — Nueva Generación, guía de identificación y recolección", precio: "24,98", rating: "4,4", img: "https://m.media-amazon.com/images/I/71DjFeAIItL._AC_UL320_.jpg" },
+  { asin: "8408269356", categoria: "libros", titulo: "El ABC del Bushcraft: técnicas esenciales de vida en la naturaleza", precio: "17,00", rating: "4,5", img: "https://m.media-amazon.com/images/I/617VlxXNOFL._AC_UL320_.jpg" },
+  { asin: "1079712348", categoria: "libros", titulo: "101 Técnicas y Consejos de Supervivencia para cualquier situación", precio: "8,26", rating: "4,3", img: "https://m.media-amazon.com/images/I/41ApCUGfqfL._AC_UL320_.jpg" },
+  { asin: "8408304798", categoria: "libros", titulo: "Bushcraft Avanzado: Guía de Nivel Experto para la vida en el bosque", precio: "16,10", rating: "4,5", img: "https://m.media-amazon.com/images/I/41FbEhKeqLL._AC_UL320_.jpg" },
+  { asin: "8408319299", categoria: "libros", titulo: "Manual de Supervivencia Urbana: cómo actuar ante cortes de suministro, desabastecimiento y crisis en la ciudad", precio: "16,05", rating: "4,9", img: "https://m.media-amazon.com/images/I/813RVVrOmvL._AC_UL320_.jpg" },
 ];
 
 function amazonLink(asin) {
