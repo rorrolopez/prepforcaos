@@ -516,3 +516,36 @@ footer.site-footer {
   .ficha-grid { grid-template-columns: 1fr; }
   .ficha-imagen-principal { height: 280px; }
 }
+
+/* ===== Ilustraciones por categoría (sustituyen a las fotos de Amazon) ===== */
+.tarjeta-ilustracion {
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--ilu-a, #5a6b47), var(--ilu-b, #2c3426));
+  position: relative; overflow: hidden;
+}
+.tarjeta-ilustracion::after {
+  content: ""; position: absolute; inset: 0;
+  background: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0 10px, transparent 10px 20px);
+}
+.tarjeta-ilustracion span {
+  font-size: 64px; line-height: 1; position: relative; z-index: 1;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.35));
+}
+.ficha-imagen-principal.tarjeta-ilustracion span { font-size: 120px; }
+.carrito-item-ilustracion {
+  width: 56px; height: 56px; flex-shrink: 0; border-radius: 4px;
+  display: flex; align-items: center; justify-content: center; font-size: 28px;
+  background: linear-gradient(135deg, var(--ilu-a, #5a6b47), var(--ilu-b, #2c3426));
+}
+.cat-agua         { --ilu-a: #3f7a8c; --ilu-b: #22495a; }
+.cat-alimentacion { --ilu-a: #9a7b3c; --ilu-b: #5e4a22; }
+.cat-mochilas     { --ilu-a: #5a6b47; --ilu-b: #2c3426; }
+.cat-botiquin     { --ilu-a: #a54a3c; --ilu-b: #62291f; }
+.cat-herramientas { --ilu-a: #6b6b62; --ilu-b: #35352f; }
+.cat-comunicacion { --ilu-a: #4f5f86; --ilu-b: #2a3350; }
+.cat-refugio      { --ilu-a: #6f7d4c; --ilu-b: #3c4526; }
+.cat-iluminacion  { --ilu-a: #c08a2b; --ilu-b: #7a5316; }
+.cat-fuego        { --ilu-a: #c0602b; --ilu-b: #7a3616; }
+.cat-libros       { --ilu-a: #7a5a45; --ilu-b: #463225; }
+.cat-energia      { --ilu-a: #3f8a5c; --ilu-b: #1f5234; }
+.ficha-precio-nota { font-size: 14px; color: var(--texto-suave); margin: 6px 0 10px; }
