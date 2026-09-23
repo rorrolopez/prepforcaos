@@ -417,6 +417,29 @@ footer.site-footer {
   font-size: 14px;
   margin: 20px 0;
 }
+.tabla-cookies {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 13px;
+}
+.tabla-cookies th, .tabla-cookies td {
+  border: 1px solid var(--borde);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.tabla-cookies th {
+  background: var(--arena-osc);
+  font-family: var(--fuente-titulo, inherit);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.tabla-cookies td { color: var(--texto); }
+@media (max-width: 700px) {
+  .tabla-cookies { display: block; overflow-x: auto; white-space: nowrap; }
+}
 
 /* ---------- Ficha extendida de producto ---------- */
 .ficha-sección { padding: 18px 20px 60px; }
