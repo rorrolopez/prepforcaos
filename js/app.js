@@ -39,11 +39,6 @@
     ).join("");
   }
 
-  function estrellas(rating) {
-    const n = Math.round(parseFloat(rating.replace(",", ".")));
-    return "★".repeat(n) + "☆".repeat(5 - n);
-  }
-
   function renderTruco() {
     if (!trucoEl) return;
     const consejos = TIPS[categoriaActiva];
@@ -78,18 +73,16 @@
         return `
         <article class="tarjeta-producto">
           <a class="tarjeta-enlace-ficha" href="ficha.html?asin=${p.asin}" aria-label="Ver ficha de ${p.titulo}">
-            <div class="tarjeta-img"><img src="${p.img}" alt="${p.titulo}" loading="lazy"></div>
+            <div class="tarjeta-img tarjeta-ilustracion cat-${p.categoria}" aria-hidden="true"><span>${cat ? cat.icono : ""}</span></div>
             <div class="tarjeta-cuerpo-superior">
               <span class="tarjeta-cat">${cat ? cat.icono + " " + cat.nombre : ""}</span>
               <h3 class="tarjeta-titulo">${p.titulo}</h3>
-              <div class="tarjeta-rating"><span class="estrella">${estrellas(p.rating)}</span> ${p.rating}/5</div>
-              <div class="tarjeta-precio">${p.precio}€ <small>en Amazon.es</small></div>
             </div>
           </a>
           <div class="tarjeta-cuerpo-inferior">
             <div class="tarjeta-acciones">
               <button type="button" class="add-carrito-btn" data-asin="${p.asin}">+ Carrito</button>
-              <a class="tarjeta-btn" href="${amazonLink(p.asin)}" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a>
+              <a class="tarjeta-btn" href="${amazonLink(p.asin)}" target="_blank" rel="nofollow sponsored noopener">Ver precio en Amazon →</a>
             </div>
           </div>
         </article>`;

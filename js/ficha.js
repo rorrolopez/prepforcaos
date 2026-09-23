@@ -18,11 +18,6 @@
     ).join("");
   }
 
-  function estrellas(rating) {
-    const n = Math.round(parseFloat(String(rating).replace(",", ".")));
-    return "★".repeat(n) + "☆".repeat(5 - n);
-  }
-
   function getAsin() {
     const params = new URLSearchParams(window.location.search);
     return params.get("asin") || params.get("id") || "";
@@ -42,7 +37,6 @@
   function renderFicha(p) {
     const cat = CATEGORIES.find((c) => c.id === p.categoria);
     const catHref = `paginas/${p.categoria}.html`;
-    const imagenes = Array.isArray(p.imagenes) && p.imagenes.length ? p.imagenes : [p.img];
     const atributos = p.atributos && typeof p.atributos === "object" ? p.atributos : {};
     const atributoEntradas = Object.entries(atributos);
 
@@ -62,15 +56,6 @@
         <span>${p.titulo}</span>`;
     }
 
-    const miniaturasHtml = imagenes
-      .map(
-        (url, i) => `
-        <button type="button" class="ficha-miniatura${i === 0 ? " activa" : ""}" data-src="${url}" aria-label="Ver imagen ${i + 1}">
-          <img src="${url}" alt="${p.titulo} — imagen ${i + 1}" loading="lazy">
-        </button>`
-      )
-      .join("");
-
     const atributosHtml = atributoEntradas.length
       ? `
       <div class="ficha-atributos">
@@ -86,34 +71,24 @@
     contenidoEl.innerHTML = `
       <div class="ficha-grid">
         <div class="ficha-galeria">
-          <div class="ficha-imagen-principal">
-            <img id="ficha-img-principal" src="${imagenes[0]}" alt="${p.titulo}">
+          <div class="ficha-imagen-principal tarjeta-ilustracion cat-${p.categoria}" aria-hidden="true">
+            <span>${cat ? cat.icono : "📦"}</span>
           </div>
-          ${imagenes.length > 1 ? `<div class="ficha-miniaturas">${miniaturasHtml}</div>` : ""}
         </div>
         <div class="ficha-info">
           <span class="tarjeta-cat">${cat ? cat.icono + " " + cat.nombre : ""}</span>
           <h1 class="ficha-titulo">${p.titulo}</h1>
-          <div class="tarjeta-rating"><span class="estrella">${estrellas(p.rating)}</span> ${p.rating}/5</div>
-          <div class="ficha-precio">${p.precio}€ <small>en Amazon.es</small></div>
+          <p class="ficha-precio-nota">Consulta el precio y la disponibilidad actualizados en Amazon.es.</p>
           <p class="ficha-descripcion">${p.descripcion || ""}</p>
           ${atributosHtml}
           <div class="ficha-acciones">
             <button type="button" class="add-carrito-btn" data-asin="${p.asin}">+ Añadir al carrito</button>
-            <a class="tarjeta-btn" href="${amazonLink(p.asin)}" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a>
+            <a class="tarjeta-btn" href="${amazonLink(p.asin)}" target="_blank" rel="nofollow sponsored noopener">Ver precio en Amazon →</a>
             <a class="btn btn-outline-oscuro" href="index.html#catalogo">← Volver al catálogo</a>
           </div>
         </div>
       </div>`;
 
-    const principalEl = document.getElementById("ficha-img-principal");
-    contenidoEl.querySelectorAll(".ficha-miniatura").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        principalEl.src = btn.dataset.src;
-        contenidoEl.querySelectorAll(".ficha-miniatura").forEach((b) => b.classList.remove("activa"));
-        btn.classList.add("activa");
-      });
-    });
   }
 
   const asin = getAsin();

@@ -49,6 +49,11 @@
     return `https://www.amazon.es/gp/aws/cart/add.html?${params.toString()}`;
   }
 
+  function icono(categoria) {
+    const c = typeof CATEGORIES !== "undefined" ? CATEGORIES.find((x) => x.id === categoria) : null;
+    return c ? c.icono : "📦";
+  }
+
   function actualizarBadge() {
     document.querySelectorAll(".carrito-badge").forEach((el) => {
       const n = totalUnidades();
@@ -82,10 +87,9 @@
         if (!p) return "";
         return `
         <div class="carrito-item" data-asin="${asin}">
-          <img src="${p.img}" alt="${p.titulo}">
+          <div class="carrito-item-ilustracion cat-${p.categoria}" aria-hidden="true">${icono(p.categoria)}</div>
           <div class="carrito-item-info">
             <p class="carrito-item-titulo">${p.titulo}</p>
-            <p class="carrito-item-precio">${p.precio}€</p>
             <div class="carrito-item-qty">
               <button type="button" class="qty-btn" data-accion="restar" data-asin="${asin}" aria-label="Quitar una unidad">−</button>
               <span>${cantidad}</span>
