@@ -71,9 +71,11 @@
     contenidoEl.innerHTML = `
       <div class="ficha-grid">
         <div class="ficha-galeria">
-          <div class="ficha-imagen-principal tarjeta-ilustracion cat-${p.categoria}" aria-hidden="true">
-            <span>${cat ? cat.icono : "📦"}</span>
+          <div class="ficha-imagen-principal tarjeta-foto">
+            <img src="${fotoUrl(p, 900)}" alt="Imagen ilustrativa: ${p.titulo}">
+            <span class="foto-ilustrativa">Imagen ilustrativa</span>
           </div>
+          <p class="foto-nota">Foto de referencia de Unsplash; puede no corresponder al modelo exacto. Consulta las imágenes reales del producto en Amazon.</p>
         </div>
         <div class="ficha-info">
           <span class="tarjeta-cat">${cat ? cat.icono + " " + cat.nombre : ""}</span>

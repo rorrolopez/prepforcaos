@@ -73,7 +73,7 @@
         return `
         <article class="tarjeta-producto">
           <a class="tarjeta-enlace-ficha" href="ficha.html?asin=${p.asin}" aria-label="Ver ficha de ${p.titulo}">
-            <div class="tarjeta-img tarjeta-ilustracion cat-${p.categoria}" aria-hidden="true"><span>${cat ? cat.icono : ""}</span></div>
+            <div class="tarjeta-img tarjeta-foto"><img src="${fotoUrl(p, 400)}" alt="Imagen ilustrativa: ${p.titulo}" loading="lazy"><span class="foto-ilustrativa">Imagen ilustrativa</span></div>
             <div class="tarjeta-cuerpo-superior">
               <span class="tarjeta-cat">${cat ? cat.icono + " " + cat.nombre : ""}</span>
               <h3 class="tarjeta-titulo">${p.titulo}</h3>

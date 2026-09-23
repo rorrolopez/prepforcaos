@@ -87,7 +87,7 @@
         if (!p) return "";
         return `
         <div class="carrito-item" data-asin="${asin}">
-          <div class="carrito-item-ilustracion cat-${p.categoria}" aria-hidden="true">${icono(p.categoria)}</div>
+          <img src="${fotoUrl(p, 120)}" alt="${p.titulo}">
           <div class="carrito-item-info">
             <p class="carrito-item-titulo">${p.titulo}</p>
             <div class="carrito-item-qty">
