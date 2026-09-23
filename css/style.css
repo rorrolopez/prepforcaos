@@ -549,3 +549,16 @@ footer.site-footer {
 .cat-libros       { --ilu-a: #7a5a45; --ilu-b: #463225; }
 .cat-energia      { --ilu-a: #3f8a5c; --ilu-b: #1f5234; }
 .ficha-precio-nota { font-size: 14px; color: var(--texto-suave); margin: 6px 0 10px; }
+
+/* ===== Fotos ilustrativas (Unsplash) ===== */
+.tarjeta-img.tarjeta-foto { padding: 0; position: relative; overflow: hidden; background: var(--arena-osc); }
+.tarjeta-img.tarjeta-foto img { width: 100%; height: 100%; max-height: none; object-fit: cover; display: block; transition: transform .3s ease; }
+.tarjeta-producto:hover .tarjeta-foto img { transform: scale(1.04); }
+.ficha-imagen-principal.tarjeta-foto { padding: 0; position: relative; overflow: hidden; }
+.ficha-imagen-principal.tarjeta-foto img { width: 100%; height: 100%; max-height: none; max-width: none; object-fit: cover; }
+.foto-ilustrativa {
+  position: absolute; left: 8px; bottom: 8px; z-index: 1;
+  background: rgba(28, 29, 24, 0.72); color: #fff; font-size: 10.5px; letter-spacing: .02em;
+  padding: 2px 7px; border-radius: 3px;
+}
+.foto-nota { font-size: 12px; color: var(--texto-suave); margin: 0; }
